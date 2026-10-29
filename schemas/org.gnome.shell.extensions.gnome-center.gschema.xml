@@ -2,7 +2,7 @@
 <schemalist>
   <schema id="org.gnome.shell.extensions.gnome-center" path="/org/gnome/shell/extensions/gnome-center/">
     <key name="toggle-gnome-center" type="as">
-      <default><![CDATA[['<Control><Super>space']]]></default>
+      <default><![CDATA[['<Super>space']]]></default>
       <summary>Shortcut to open Gnome Center</summary>
     </key>
     <key name="width" type="i">

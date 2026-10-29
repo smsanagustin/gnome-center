@@ -18,5 +18,5 @@ case $list in
 esac
 
 echo "Gnome Center installed to $dest"
-echo "Log out and back in to load it, then press Ctrl+Super+Space."
+echo "Log out and back in to load it, then press Super+Space."
 echo "Settings are in the Extensions app."

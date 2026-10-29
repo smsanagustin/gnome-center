@@ -10,7 +10,7 @@ cd gnome-center
 ./install.sh
 ```
 
-<kbd>Ctrl</kbd>+<kbd>Super</kbd>+<kbd>Space</kbd> is the default keybind which can be changed from the settings.
+<kbd>Super</kbd>+<kbd>Space</kbd> is the default keybind which can be changed from the settings.
 
 ## Settings
 

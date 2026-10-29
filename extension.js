@@ -47,6 +47,7 @@ export default class GnomeCenter extends Extension {
         Main.wm.removeKeybinding('toggle-gnome-center');
         Main.overview.disconnectObject(this);
         this._backdrop.disconnectObject(this);
+        this._box.destroy();
         this._backdrop.destroy();
         this._backdrop = this._box = this._settings = null;
     }

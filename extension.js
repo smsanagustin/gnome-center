@@ -20,17 +20,19 @@ export default class GnomeCenter extends Extension {
         });
         this._backdrop = new St.Widget({reactive: true, visible: false});
         this._backdrop.add_child(this._box);
-        this._backdrop.connect('button-press-event', (_actor, event) => {
-            if (!this._box.contains(global.stage.get_event_actor(event)))
+        this._backdrop.connectObject(
+            'button-press-event', (_actor, event) => {
+                if (!this._box.contains(global.stage.get_event_actor(event)))
+                    this._close();
+            },
+            'captured-event', (_actor, event) => {
+                if (event.type() !== Clutter.EventType.KEY_PRESS ||
+                    event.get_key_symbol() !== Clutter.KEY_Escape)
+                    return Clutter.EVENT_PROPAGATE;
                 this._close();
-        });
-        this._backdrop.connect('captured-event', (_actor, event) => {
-            if (event.type() !== Clutter.EventType.KEY_PRESS ||
-                event.get_key_symbol() !== Clutter.KEY_Escape)
-                return Clutter.EVENT_PROPAGATE;
-            this._close();
-            return Clutter.EVENT_STOP;
-        });
+                return Clutter.EVENT_STOP;
+            },
+            this);
         Main.layoutManager.addTopChrome(this._backdrop);
 
         Main.wm.addKeybinding('toggle-gnome-center', this._settings,
@@ -44,6 +46,7 @@ export default class GnomeCenter extends Extension {
         this._close();
         Main.wm.removeKeybinding('toggle-gnome-center');
         Main.overview.disconnectObject(this);
+        this._backdrop.disconnectObject(this);
         this._backdrop.destroy();
         this._backdrop = this._box = this._settings = null;
     }

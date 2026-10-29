@@ -1,0 +1,28 @@
+.gnome-center {
+  padding: 12px;
+  spacing: 12px;
+  border-radius: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.gnome-center .search-entry {
+  margin: 0;
+}
+
+.gnome-center #searchResults,
+.gnome-center .search-section-content {
+  margin: 0;
+}
+
+.gnome-center StScrollBar {
+  padding-left: 6px;
+}
+
+.gnome-center .grid-search-results {
+  spacing: 0;
+}
+
+.gnome-center .overview-tile,
+.gnome-center .grid-search-result {
+  margin: 0 15px;
+}

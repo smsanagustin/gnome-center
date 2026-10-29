@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.gnome-center" path="/org/gnome/shell/extensions/gnome-center/">
+    <key name="toggle-gnome-center" type="as">
+      <default><![CDATA[['<Control><Super>space']]]></default>
+      <summary>Shortcut to open Gnome Center</summary>
+    </key>
+    <key name="width" type="i">
+      <range min="300" max="4000"/>
+      <default>700</default>
+      <summary>Window width</summary>
+    </key>
+    <key name="height" type="i">
+      <range min="200" max="4000"/>
+      <default>500</default>
+      <summary>Window height</summary>
+    </key>
+    <key name="transparency" type="i">
+      <range min="0" max="100"/>
+      <default>10</default>
+      <summary>Background transparency in percent</summary>
+    </key>
+  </schema>
+</schemalist>

@@ -14,6 +14,11 @@
   margin: 0;
 }
 
+.gnome-center .search-section-content {
+  background-color: #47474c;
+  border-radius: 12px;
+}
+
 .gnome-center StScrollBar {
   padding-left: 6px;
 }
@@ -25,4 +30,19 @@
 .gnome-center .overview-tile,
 .gnome-center .grid-search-result {
   margin: 0 15px;
+}
+
+.gnome-center .list-search-result:hover,
+.gnome-center .search-provider-icon:hover {
+  background-color: st-lighten(#47474c, 7%);
+}
+
+.gnome-center .list-search-result:selected,
+.gnome-center .search-provider-icon:selected {
+  background-color: st-lighten(#47474c, 8%);
+}
+
+.gnome-center .list-search-result:active,
+.gnome-center .search-provider-icon:active {
+  background-color: st-lighten(#47474c, 9%);
 }

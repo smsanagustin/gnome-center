@@ -16,10 +16,9 @@ cd gnome-center
 
 - Shortcut/keybind
 - Height/width
-- Window transparency
 
 ## Uninstall
 
 ```sh
-gnome-extensions uninstall gnome-center@sophiescodes.github.io
+gnome-extensions uninstall gnome-center@smsanagustin.github.io
 ```

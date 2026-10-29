@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-uuid=gnome-center@sophiescodes.github.io
+uuid=gnome-center@smsanagustin.github.io
 dest="${XDG_DATA_HOME:-$HOME/.local/share}/gnome-shell/extensions/$uuid"
 
 cd "$(dirname "$0")"

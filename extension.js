@@ -14,7 +14,7 @@ export default class GnomeCenter extends Extension {
     enable() {
         this._settings = this.getSettings();
         this._box = new St.BoxLayout({
-            style_class: 'gnome-center',
+            style_class: 'popup-menu-content gnome-center',
             orientation: Clutter.Orientation.VERTICAL,
             reactive: true,
         });
@@ -81,7 +81,6 @@ export default class GnomeCenter extends Extension {
 
         const scale = St.ThemeContext.get_for_stage(global.stage).scale_factor;
         const [width, height] = ['width', 'height'].map(k => this._settings.get_int(k) * scale);
-        const alpha = 1 - this._settings.get_int('transparency') / 100;
         const monitor = Main.layoutManager.currentMonitor;
         this._backdrop.set_position(monitor.x, monitor.y);
         this._backdrop.set_size(monitor.width, monitor.height);
@@ -89,7 +88,6 @@ export default class GnomeCenter extends Extension {
             Math.round((monitor.width - width) / 2),
             Math.round((monitor.height - height) / 2));
         this._box.width = width;
-        this._box.style = `background-color: rgba(34, 34, 38, ${alpha});`;
 
         const fit = () => (this._box.height = search.visible ? height : -1);
         search.connectObject('notify::visible', fit, this);

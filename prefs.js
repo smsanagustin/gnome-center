@@ -56,7 +56,6 @@ export default class GnomeCenterPreferences extends ExtensionPreferences {
         for (const [key, title, subtitle, min, max, step] of [
             ['width', 'Width', 'Pixels', 300, 4000, 10],
             ['height', 'Height', 'Pixels', 200, 4000, 10],
-            ['transparency', 'Transparency', 'Percent', 0, 100, 5],
         ]) {
             const spin = Adw.SpinRow.new_with_range(min, max, step);
             spin.set({title, subtitle});

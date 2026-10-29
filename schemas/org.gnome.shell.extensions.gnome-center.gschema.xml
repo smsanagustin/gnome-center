@@ -15,10 +15,5 @@
       <default>500</default>
       <summary>Window height</summary>
     </key>
-    <key name="transparency" type="i">
-      <range min="0" max="100"/>
-      <default>10</default>
-      <summary>Background transparency in percent</summary>
-    </key>
   </schema>
 </schemalist>

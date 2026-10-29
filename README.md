@@ -1,6 +1,12 @@
 # Gnome Center
 
-Overview search on a small window for Gnome 51.
+Gnome search but it's spotlight.
+
+## Screenshots
+
+Default:
+
+If using [blur my shell](https://github.com/aunetx/blur-my-shell):
 
 ## How to install
 
@@ -14,8 +20,7 @@ cd gnome-center
 
 ## Settings
 
-- Shortcut/keybind
-- Height/width
+\<screenshot\>
 
 ## Uninstall
 

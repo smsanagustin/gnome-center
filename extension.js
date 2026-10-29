@@ -48,8 +48,10 @@ export default class GnomeCenter extends Extension {
         Main.overview.disconnectObject(this);
         this._backdrop.disconnectObject(this);
         this._box.destroy();
+        this._box = null;
         this._backdrop.destroy();
-        this._backdrop = this._box = this._settings = null;
+        this._backdrop = null;
+        this._settings = null;
     }
 
     _toggle() {

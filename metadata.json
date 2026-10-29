@@ -4,5 +4,6 @@
   "description": "Gnome search overview on a small centered window instead of the full overview.",
   "shell-version": ["51"],
   "settings-schema": "org.gnome.shell.extensions.gnome-center",
+  "url": "https://github.com/smsanagustin/gnome-center",
   "version": 1
 }

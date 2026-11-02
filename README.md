@@ -17,7 +17,13 @@ Gnome search but it's spotlight.
 
 
 ## How to install
+### I. Via Gnome Extensions
+1. Download Extension Manager from [Flathub](https://flathub.org/en/apps/com.mattjakeman.ExtensionManager).
+  - OR via AUR: `yay -S extension-manager`
+2. Open Extension Manager, hit Browse then search for Gnome Center.
+3. Click `Install`.
 
+### II. Manually
 ```sh
 git clone <this repo>
 cd gnome-center
@@ -26,13 +32,15 @@ cd gnome-center
 
 <kbd>Super</kbd>+<kbd>Space</kbd> is the default keybind which can be changed from the settings.
 
-## Settings
-
-<img width="687" height="626" alt="Screenshot From 2026-10-30 00-03-56" src="https://github.com/user-attachments/assets/c7cc7bf4-7fcf-480c-b0a7-b6d0f076d99e" />
-
-
 ## Uninstall
 
 ```sh
 gnome-extensions uninstall gnome-center@smsanagustin.github.io
 ```
+
+## Settings
+
+<img width="687" height="626" alt="Screenshot From 2026-10-30 00-03-56" src="https://github.com/user-attachments/assets/c7cc7bf4-7fcf-480c-b0a7-b6d0f076d99e" />
+
+
+

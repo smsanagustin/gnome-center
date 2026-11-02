@@ -2,6 +2,8 @@
 
 Gnome search but it's spotlight.
 
+[<img height="120" alt="get_it_on_gnome" src="https://github.com/user-attachments/assets/891ac2a7-a28e-406e-a84a-cb2b1bad3ca6" />](https://extensions.gnome.org/extension/11545/gnome-center/)
+
 ## Screenshots
 
 ### Default:

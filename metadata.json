@@ -5,5 +5,5 @@
   "shell-version": ["51"],
   "settings-schema": "org.gnome.shell.extensions.gnome-center",
   "url": "https://github.com/smsanagustin/gnome-center",
-  "version": 1
+  "version": 2
 }

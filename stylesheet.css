@@ -47,6 +47,26 @@
   background-color: st-lighten(#47474c, 9%);
 }
 
+.gnome-center .overview-tile:hover,
+.gnome-center .grid-search-result:hover {
+  background-color: st-lighten(#36363a, 7%);
+}
+
+.gnome-center .overview-tile:selected,
+.gnome-center .grid-search-result:selected {
+  background-color: st-lighten(#36363a, 8%);
+}
+
+.gnome-center .overview-tile:selected:hover,
+.gnome-center .grid-search-result:selected:hover {
+  background-color: st-lighten(#36363a, 12%);
+}
+
+.gnome-center .overview-tile:active,
+.gnome-center .grid-search-result:active {
+  background-color: st-lighten(#36363a, 9%);
+}
+
 /* use the same CSS selectors targeted by blur my shell */
 .bms-popup-background-transparent .gnome-center .search-section-content,
 .bms-popup-background-dark .gnome-center .search-section-content {
@@ -60,6 +80,14 @@
 .bms-popup-background-dark .gnome-center .list-search-result:hover,
 .bms-popup-background-dark .gnome-center .search-provider-icon:hover,
 .bms-popup-background-dark .gnome-center .list-search-result:selected,
+.bms-popup-background-transparent .gnome-center .overview-tile:hover,
+.bms-popup-background-transparent .gnome-center .grid-search-result:hover,
+.bms-popup-background-transparent .gnome-center .overview-tile:selected,
+.bms-popup-background-transparent .gnome-center .grid-search-result:selected,
+.bms-popup-background-dark .gnome-center .overview-tile:hover,
+.bms-popup-background-dark .gnome-center .grid-search-result:hover,
+.bms-popup-background-dark .gnome-center .overview-tile:selected,
+.bms-popup-background-dark .gnome-center .grid-search-result:selected,
 .bms-popup-background-dark .gnome-center .search-provider-icon:selected {
   background-color: rgba(255, 255, 255, 0.12);
 }
@@ -67,6 +95,10 @@
 .bms-popup-background-transparent .gnome-center .list-search-result:active,
 .bms-popup-background-transparent .gnome-center .search-provider-icon:active,
 .bms-popup-background-dark .gnome-center .list-search-result:active,
+.bms-popup-background-transparent .gnome-center .overview-tile:active,
+.bms-popup-background-transparent .gnome-center .grid-search-result:active,
+.bms-popup-background-dark .gnome-center .overview-tile:active,
+.bms-popup-background-dark .gnome-center .grid-search-result:active,
 .bms-popup-background-dark .gnome-center .search-provider-icon:active {
   background-color: rgba(255, 255, 255, 0.15);
 }

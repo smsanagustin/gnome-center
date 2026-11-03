@@ -46,3 +46,27 @@
 .gnome-center .search-provider-icon:active {
   background-color: st-lighten(#47474c, 9%);
 }
+
+/* use the same CSS selectors targeted by blur my shell */
+.bms-popup-background-transparent .gnome-center .search-section-content,
+.bms-popup-background-dark .gnome-center .search-section-content {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.bms-popup-background-transparent .gnome-center .list-search-result:hover,
+.bms-popup-background-transparent .gnome-center .search-provider-icon:hover,
+.bms-popup-background-transparent .gnome-center .list-search-result:selected,
+.bms-popup-background-transparent .gnome-center .search-provider-icon:selected,
+.bms-popup-background-dark .gnome-center .list-search-result:hover,
+.bms-popup-background-dark .gnome-center .search-provider-icon:hover,
+.bms-popup-background-dark .gnome-center .list-search-result:selected,
+.bms-popup-background-dark .gnome-center .search-provider-icon:selected {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.bms-popup-background-transparent .gnome-center .list-search-result:active,
+.bms-popup-background-transparent .gnome-center .search-provider-icon:active,
+.bms-popup-background-dark .gnome-center .list-search-result:active,
+.bms-popup-background-dark .gnome-center .search-provider-icon:active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
